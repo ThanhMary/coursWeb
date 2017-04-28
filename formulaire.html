@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fr">
+      <HEAD>
+		<meta charset="utf-8">
+		<TITLE> Formulaire</TITLE>
+		<link rel="stylesheet" type="text/css" href="styleformulaire.css">
+     </HEAD>
+	<BODY>
+	<center><fieldset>
+	<h1>
+	<CENTER><legend> NOUS AVONS UN GRAND PLAISIR DE VOUS FAIRE CONNAISSANCE </legend> 
+	</h1>
+	
+	<center>
+	<h2><FORM method = "POST" action = "traitement_formulaire.php">
+	<fieldset>
+		<legend> Vos coordonnées : </legend>
+		<label for="nom">Votre nom </label>
+			<input type="text" name="nom" id="nom" /></br>
+		<label for="prenom">Votre prenom </label>
+			<input type="text" name="prenom" id="prenom" /></br>
+        <label <for="annee"> Année de naissance </label>
+			<input type="date" name="Année de naissance">
+	    <label <for="email">Votre Civile</label>
+			<input type="radio" name="Madame" value="Madame"/> Madame
+			<input type="radio" name="Monsieur" value="Monsieur" checked />Monsieur
+		<label <for="email">Votre Adresse</label>
+			<textarea name="textarea"rows=4>contenu</textarea>
+		<label <for="email">Code postal</label> 
+			<INPUT TYPE="text" NAME="Postal" size= 2> 
+	
+	<p>
+       <label for="pays">Dans quel pays habitez-vous ?</label><br />
+       <select name="pays" id="pays">
+           <optgroup label="Europe">
+               <option value="france">France</option>
+               <option value="espagne">Espagne</option>
+               <option value="italie">Italie</option>
+               <option value="royaume-uni">Royaume-Uni</option>
+           </optgroup>
+           <optgroup label="Amérique">
+               <option value="canada">Canada</option>
+               <option value="etats-unis">Etats-Unis</option>
+           </optgroup>
+           <optgroup label="Asie">
+               <option value="chine">Chine</option>
+               <option value="japon">Japon</option>
+           </optgroup>
+       </select>
+   </p>
+</fieldset>
+	
+<fieldset>
+	<legend> Connaissance Professionelle : </legend>
+	<label for="pays">Votre niveau en programmation</label>	
+		<input type="radio" name="niveau" value="débutant"/ size= 10/>Débutant
+		<input type="radio" name="niveau" value="moyen" checked />Moyen
+		<input type="radio" name="niveau" value="expert"/>Expert
+	<p>	
+	<input type="range" min="-100" max="100" value="0" step="2" name="power" list="powers">
+	<datalist id="powers">
+	<option value="0">
+	<option value="-30">
+	<option value="30">
+	<option value="+50">
+	</datalist>
+</p>
+
+	<label for="pays"> Plateformes </label>	
+	<input type="checkbox" name="c1" value="checkbox"/>Windows 
+	<input type="checkbox" name="c2" value="checkbox"/>Macintosh 
+	<input type="checkbox" name="c3" value="checkbox"/>Unix
+</p>
+	<label for="pays"> Applications utilisées </label>	
+       <input type="checkbox" name="telephone" id="telephone" /> Telephone
+       <input type="checkbox" name="Mail" id="Mail" /> Mail
+       <input type="checkbox" name="Message" id="Message" /> Message
+       <input type="checkbox" name="Meteo" id="Meteo" /> Meteo
+	
+</fieldset>
+<fieldset>
+   	<legend> Votre tranche d'âge </legend>
+       
+       <br><input type="radio" name="age" value="moins15" id="moins15" /> Moins de 15 ans
+       <br><input type="radio" name="age" value="medium15-25" id="medium15-25" /> 15-25 ans
+       <br><input type="radio" name="age" value="medium25-40" id="medium25-40" /> 25-40 ans
+       <br><input type="radio" name="age" value="plus40" id="plus40" checked /> Encore plus vieux que ça ?!
+	</p>
+</fieldset>	
+	
+			
+<fieldset>
+ <legend> A propos des CSS : </legend>
+   <p>Savez-vous ce que veut dire CSS ? : </p>
+     <input type="radio" name="CSS" value="oui" id="oui"
+     checked="checked" />
+     <label for="oui" class="inline">oui</label>
+     <input type="radio" name="CSS" value="non" id="non" />
+     <label for="non" class="inline">non</label>
+	 
+  <label for="utilise">Si oui, les utilisez-vous plutôt : </label>
+   <select name="utilise" id="utilise">
+   <option value="toujours"> toujours</option>
+   <option value="parfois"> parfois</option>
+   <option value="jamais"> jamais</option>
+   </select>
+</fieldset>
+
+<fieldset>
+ <legend>Vos coordonnées numériques :</legend>
+  <label for="email">Votre email :</label>
+   <input type="email" name="email" size="20" 
+   maxlength="40" value="email" id="email" />
+
+  <label for="comments">Vos commentaires :</label>
+   <textarea name="comments" id="comments" cols="20" rows="4">
+   </textarea>
+</fieldset>
+
+ <p>
+ <input type="submit" value="Envoyer" />
+ <input type="reset" value="Annuler" />
+ </p>
+ 
+
+ </fieldset>
+
+	</center>		
+	</FORM>
+
+	</BODY>
